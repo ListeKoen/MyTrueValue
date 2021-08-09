@@ -1,0 +1,628 @@
+:root {
+--blue: #85b7cd;
+--red: #d42929;
+--white: #ffffff;
+--green: #90ED9B;
+--darkGrey: #707070;
+--sand: #dfc9a9;
+--shadow: 2px 4px 4px rgba(0, 0, 0, 0.1)
+}
+
+body {
+    font-family: "Montserrat", 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+h1, h2 {
+    color: var(--white);
+    font-weight: bold;
+}
+
+p {
+    font-size: 6vw;
+    color: var(--white);
+}
+
+img {
+    width: 100%;
+}
+
+/* ------------------------------------------------------------ */
+/* Header */
+
+header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+header img {
+    height: 50px;
+    width: auto;
+    float: left;
+    padding: 2vh 2vw;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------ */
+/* Top Box */
+
+.topBox {
+    background-image: url("img/mountainsSky.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.05);
+    padding: 35vh 10vw;
+}
+
+.topBox h1 {
+    font-size: 8vw;
+}
+
+.topBox p {
+    font-size: 4vw;
+}
+
+/* ------------------------------------------------------------ */
+/* Button */
+
+.btnType1 {
+    padding: 10px 50px;
+    color: var(--white);
+    background-color: var(--green);
+    border: none;
+    border-radius: 25px;
+    box-shadow: var(--shadow);
+    font-size: 3vw;
+}
+
+.btnType1:hover {
+    transition-duration: 0.2s;
+    color: var(--darkGrey);
+    background-color: var(--white);
+}
+
+/* ------------------------------------------------------------ */
+/* Text Section */
+
+.textSection {
+    padding: 10vh 10vw;
+    background-image: url("img/Waterfall\ .png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+
+.textSection h2 {
+    font-size: 4vw;
+}
+
+.textSection p {
+    text-align: left;
+}
+
+/* ------------------------------------------------------------ */
+/* Text Section 2 */
+
+.textSection2 {
+    padding: 10vh 10vw;
+    background-color: var(--white);
+    text-align: left;
+}
+
+.textSection2 h2 {
+    font-size: 6vw;
+    color: var(--darkGrey);
+}
+
+.textSection2 p {
+    font-size: 4vw;
+    color: var(--darkGrey);
+}
+
+.textSection2 a {
+    color: var(--darkGrey);
+}
+
+/* ------------------------------------------------------------ */
+/* Collapsible */
+
+.collapsibleButton {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--white);
+    background-color: var(--darkGrey);
+    text-align: left;
+    font-size: 4vw;
+    transition: background-color 0.2s;
+}
+
+.collapsibleButton:hover {
+    background-color: var(--blue);
+}
+
+.collapsibleButton::after {
+    content: '\002B';
+    float: right;
+    transform: scale(1.5);
+}
+
+.collapsibleButtonActive {
+    background-color: var(--blue);
+}
+
+.collapsibleButtonActive::after {
+    content: "\2212";
+}
+
+.collapsibleContent {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s;
+}
+
+.collapsibleContent p {
+    color: var(--darkGrey);
+    text-align: left;
+}
+
+/* ------------------------------------------------------------ */
+/* Instagram Section */
+
+.instagramSection {
+    padding: 6vh 10vw;
+    background-color: var(--sand);
+    color: var(--white);
+}
+
+.instagramSection h3 {
+    font-size: 8vw;
+}
+
+.instagramSection p {
+    font-size: 3vw;
+}
+
+.instagramSection a {
+    color: var(--white);
+}
+
+.imgDisplay {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* ------------------------------------------------------------ */
+/* Info Section */
+
+.infoSection {
+    color: var(--white);
+    background-color: var(--blue);
+    padding: 10vh 10vw;
+}
+
+.infoSection h2 {
+    font-size: 4vw;
+    margin-bottom: 6vh;
+}
+
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: left;
+}
+
+.benefitBox h4 {
+    font-size: 5vw;
+    margin-bottom: 0;
+}
+
+.benefitBox p {
+    font-size: 4vw;
+}
+
+/* ------------------------------------------------------------ */
+/* Info Section 2 */
+
+.infoSection2 {
+    color: var(--white);
+    background-color: var(--blue);
+    padding: 10vh 10vw;
+}
+
+.infoSection2 h2 {
+    font-size: 4vw;
+    margin-bottom: 6vh;
+}
+
+.infoBoxes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10vw;
+}
+
+.infoBox h4 {
+    font-size: 5vw;
+}
+
+.infoBox p {
+    font-size: 4vw;
+}
+
+.infoBox img {
+    border-radius: 50%;
+}
+
+/* ------------------------------------------------------------ */
+/* Download Section */
+
+.downloadSection {
+    padding: 10vh 10vw 12vh;
+    color: var(--white);
+    background-image: url("img/Woods\ dense.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+}
+
+.downloadSection h3 {
+    font-size: 8vw;
+}
+
+/* ------------------------------------------------------------ */
+/* Footer Section */
+
+footer {
+    padding: 4vh 10vw 20vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10vw;
+    text-align: left;
+    color: var(--darkGrey);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--darkGrey);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 1vh;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    color: var(--darkGrey);
+    font-size: 3vw;
+    margin: 0
+}
+
+.footerMedia {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4vw;
+    font-size: 5vw;
+}
+
+.fa {
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 2vw;
+    margin: 0;
+    color: var(--darkGrey);
+}
+
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.fa-facebook:hover {
+    color: #3B5998;
+}
+
+.fa-linkedin:hover {
+    color: #007bb5;
+}
+
+.fa-youtube:hover {
+    color: #bb0000;
+}
+  
+.fa-instagram:hover {
+    color: #125688;
+}
+  
+.fa-pinterest:hover {
+    color: #cb2027;
+}
+
+.fa-tiktok:hover {
+    color: #ff0050;
+}
+
+.copyright {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+/* ------------------------------------------------------------ */
+/* Cookie Container */
+
+.cookieContainer {
+    position: fixed;
+    bottom: -100;
+    left: 0;
+    right: 0;
+    color: var(--white);
+    background-color: var(--darkGrey);
+    padding: 1vh 2vw 2vh;
+    transition: 500ms;
+    box-shadow: var(--shadow);
+    text-align: left;
+}
+
+.cookieContainer.active {
+    bottom: 0;
+}
+
+.cookieContainer p {
+    font-size: 2vw;
+}
+
+.cookieContainer a {
+    color: var(--white);
+}
+
+.cookieBtn {
+    color: var(--darkGrey);
+    background-color: var(--white);
+    border: none;
+    padding: 4px 10px;
+    border-radius: 10%;
+    cursor: pointer;
+    font-size: 2vw;
+}
+
+/* ------------------------------------------------------------ */
+
+@media only screen and (min-width: 768px) {
+
+    p {
+        font-size: 2vw;
+    }
+
+    /* ------------------------------------------------------------ */
+    /* Top Box */
+
+    .topBox {
+        padding: 35vh 30vw;
+    }
+
+    .topBox h1 {
+        font-size: 4vw;
+    }
+
+    .topBox p {
+        font-size: 2vw;
+    }
+
+    /* ------------------------------------------------------------ */
+    /* Button */
+
+    .btnType1 {
+        font-size: 1vw;
+    }
+
+    /* ------------------------------------------------------------ */
+    /* Text Section */
+
+    .textSection {
+        padding: 10vh 30vw;
+    }
+
+    .textSection h2 {
+        font-size: 1vw;
+    }
+
+    /* ------------------------------------------------------------ */
+    /* Text Section 2 */
+
+    .textSection2 {
+        padding: 10vh 30vw;
+    }
+
+    .textSection2 h2 {
+        font-size: 2vw;
+    }
+
+    .textSection2 p {
+        font-size: 1vw;
+    }
+
+    /* ------------------------------------------------------------ */
+    /* Collapsible */
+
+    .collapsibleButton {
+        font-size: 1vw;
+    }
+
+    /* ------------------------------------------------------------ */
+    /* Instagram Section */
+
+    .instagramSection {
+        padding: 6vh 30vw;
+    }
+
+    .instagramSection h3 {
+        font-size: 4vw;
+    }
+
+    .instagramSection p {
+        font-size: 2vw;
+    }
+
+    .imgDisplay {
+        padding: 0 20vw 10vh;
+        background-color: var(--sand);
+        grid-gap: 2vw;
+    }
+
+    /* ------------------------------------------------------------ */
+    /* Info Section */
+
+    .infoSection {
+        padding: 20vh 20vw;
+    }
+
+    .infoSection h2 {
+        font-size: 1vw;
+    }
+
+    .benefits {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 4vw;
+    }
+
+    .benefitBox h4 {
+        font-size: 2vw;
+    }
+
+    .benefitBox p {
+        font-size: 1vw;
+    }
+
+    /* ------------------------------------------------------------ */
+    /* Info Section 2 */
+
+    .infoSection2 {
+        padding: 10vh 24vw 20vh;
+    }
+
+    .infoSection2 h2 {
+        font-size: 1vw;
+        margin-bottom: 6vh;
+    }
+
+    .infoBoxes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 6vw;
+    }
+
+    .infoBox h4 {
+        font-size: 2vw;
+    }
+
+    .infoBox p {
+        font-size: 1vw;
+    }
+
+    .infoBox img {
+        border-radius: 50%;
+    }
+
+    /* ------------------------------------------------------------ */
+    /* Download Section */
+
+    .downloadSection {
+        padding: 30vh 30vw;
+    }
+
+    .downloadSection h3 {
+        font-size: 3vw;
+    }
+
+    /* ------------------------------------------------------------ */
+    /* Footer Section */
+
+    footer {
+        padding: 4vh 24vw 10vh;
+        grid-gap: 6vw;
+    }
+
+    footer a {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer p {
+        font-size: 1vw;
+    }
+
+    .footerMedia {
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 1vw;
+        font-size: 2vw;
+    }
+
+    .fa {
+        padding: 0;
+    }
+
+    .copyright {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ------------------------------------------------------------ */
+    /* Cookie Container */
+
+    .cookieContainer {
+        position: fixed;
+        bottom: -100;
+        left: 0;
+        right: 0;
+        color: var(--white);
+        background-color: var(--darkGrey);
+        padding: 1vh 2vw 2vh;
+        transition: 500ms;
+        box-shadow: var(--shadow);
+        text-align: left;
+    }
+
+    .cookieContainer.active {
+        bottom: 0;
+    }
+
+    .cookieContainer p {
+        font-size: 2vw;
+    }
+
+    .cookieContainer a {
+        color: var(--white);
+    }
+
+    .cookieBtn {
+        color: var(--darkGrey);
+        background-color: var(--white);
+        border: none;
+        padding: 4px 10px;
+        border-radius: 10%;
+        cursor: pointer;
+        font-size: 2vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

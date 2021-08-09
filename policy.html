@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <script src="https://kit.fontawesome.com/69957dc5d9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>My True Value</title>
+    <link rel="icon" href="img/AppLogo.png" type="image/icon type">
+</head>
+<body>
+<!-- Header -->
+
+    <header>
+        <div>
+            <a href="index.html"><img src="img/LogoText.png" alt="My True Value"></a>
+        </div>
+        <div>
+            
+        </div>
+    </header>
+
+<!-- Text Section 2 -->
+
+    <section class="textSection2">
+        <h2><i class="fas fa-check-square"></i> Terms & Conditions</h2>
+        <div>
+            <button type="button" class="collapsibleButton">Expand content</button>
+            <div class="collapsibleContent">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, mollitia.</p>
+            </div>
+        </div>
+
+        <!-- Break -->
+        <br><br><hr><br>
+        <!-- Break -->
+
+        <h2><i class="fas fa-user-shield"></i> Privacy Policy</h2>
+        <p>FeelGood built the My True Value app as a Free app. This SERVICE is provided by FeelGood
+        at no cost and is intended for use as is.</p>
+        <p>This page is used to inform visitors regarding FeelGoods policies with the collection, use,
+        and disclosure of Personal Information if anyone decides to use the Service.</p>
+        <p>If you choose to use the FeelGood Service, then you agree to the collection and use of
+        information in relation to this policy. The Personal Information that FeelGood collect is
+        used for providing and improving the Service. FeelGood will not use or share your
+        information with anyone except as described in this Privacy Policy.</p>
+
+        <div>
+            <button type="button" class="collapsibleButton">Information Collection and Use</button>
+            <div class="collapsibleContent">
+                <p>For a better experience, while using the Service, FeelGood may
+                require you to provide us with certain personally identifiable information.
+                The information that is requested will be retained on your device and is
+                not collected by FeelGood in any way.</p>
+                <p>The app does not use third-party services that may collect information
+                used to identify you.</p>
+            </div>
+        </div>
+
+        <div>
+            <button type="button" class="collapsibleButton">Log Data</button>
+            <div class="collapsibleContent">
+                <p>In a case of an error in the My True Value app, FeelGood collects data
+                and information (through third-party products) on your phone called Log Data.
+                This Log Data may include information such as your device Internet Protocol
+                (“IP”) address, device name, operating system version, the configuration of
+                the app when utilizing my Service, the time and date of your use of the Service,
+                and other statistics.</p>
+            </div>
+        </div>
+
+        <div>
+            <button type="button" class="collapsibleButton">Service Providers</button>
+            <div class="collapsibleContent">
+                <p>FeelGood may employ third-party companies and individuals due to the
+                following reasons:</p>
+                <p><i class="fas fa-heart"></i> To facilitate our Service;</p>
+                <p><i class="fas fa-heart"></i> To provide the Service on our behalf;</p>
+                <p><i class="fas fa-heart"></i> To perform Service-related services; or</p>
+                <p><i class="fas fa-heart"></i> To assist us in analyzing how our Service is used.</p>
+                <p>The reason is to perform the tasks assigned to them on our behalf.
+                However, they are obligated not to disclose or use the information for
+                any other purpose.</p>
+            </div>
+        </div>
+
+        <div>
+            <button type="button" class="collapsibleButton">Changes to This Privacy Policy</button>
+            <div class="collapsibleContent">
+                <p>FeelGood may update our Privacy Policy from time to time. Thus, you are advised to
+                review this page periodically for any changes. FeelGood will notify you of any changes
+                by posting the new Privacy Policy on this page. These changes are effective immediately
+                after they are posted on this page.</p>
+            </div>
+        </div>
+
+        <p>If you have any questions or suggestions about this Privacy Policy, do not hesitate to contact
+        FeelGood at <a href="mailto:FeelGood@feelgoodaboutyou.life">feelgood@feelgoodaboutyou.life</a> or at:</p>
+        <p>FeelGood - Kaervang 1, DK-4000 Roskilde - Denmark</p>
+        
+        <!-- Break -->
+        <br><br><hr><br>
+        <!-- Break -->
+
+        <h2><i class="fas fa-cookie-bite"></i> Cookie Policy</h2>
+        <p>Healthy self-worth is the greatest and strongest gift
+        you can give yourself.</p>
+    </section>
+    <hr>
+
+<!-- Footer -->
+
+    <footer>
+        <section class="footerSection">
+            <h4>My True Value</h4>
+            <hr>
+            <a href="about.html">About Us</a>
+            <a href="product.html">Product</a>
+            <a href="#">Partnership</a>
+        </section>
+        <section class="footerSection">
+            <h4>More</h4>
+            <hr>
+            <a href="policy.html">Our Policies</a>
+            <a href="faq.html">FAQ</a>
+        </section>
+        <section class="footerMedia">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-pinterest"></a>
+            <a href="#" class="fa fa-tiktok"></a>
+        </section>
+        <section>
+            <!-- Empty -->
+        </section>
+        <section class="copyright">
+            <p>©2021 My True Value.</p>
+            <p>All rights reserved</p>
+        </section>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.collapsibleButton').forEach(button => {
+    button.addEventListener('click', () => {
+        const collapsibleContent = button.nextElementSibling;
+
+        button.classList.toggle('collapsibleButtonActive');
+
+        if (button.classList.contains('collapsibleButtonActive')) {
+            collapsibleContent.style.maxHeight = collapsibleContent.scrollHeight + 'px';
+        }
+        else {
+            collapsibleContent.style.maxHeight = 0;
+        }
+    });
+});
+    </script>
+</body>
+</html>
