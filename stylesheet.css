@@ -8,6 +8,12 @@
     text-align: left;
 }
 
+#mc_embed_signup {
+    background:pink;
+    clear:left;
+    font:14px;
+}
+
 :root {
 --blue: #85b7cd;
 --red: #d42929;
