@@ -20,6 +20,7 @@
 --white: #ffffff;
 --green: #90ED9B;
 --darkGrey: #707070;
+--lightGrey: #f1f1f1;
 --sand: #dfc9a9;
 --shadow: 2px 4px 4px rgba(0, 0, 0, 0.3)
 }
@@ -36,12 +37,26 @@ h1, h2 {
 }
 
 p {
-    font-size: 6vw;
+    font-size: 24px;
     color: var(--white);
 }
 
 img {
     width: 100%;
+}
+
+.divider {
+    display: block;
+    height: 1px;
+    background-color: var(--darkGrey);
+    margin: 6vh 0;
+}
+
+.divider2 {
+    display: block;
+    height: 1px;
+    background-color: var(--darkGrey);
+    margin: 2vh 0;
 }
 
 /* ------------------------------------------------------------ */
@@ -141,15 +156,18 @@ nav a {
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.05);
-    padding: 35vh 10vw;
+    padding: 32vh 10vw;
 }
 
 .topBox h1 {
-    font-size: 8vw;
+    font-size: 40px;
+    margin-bottom: 1vh;
 }
 
 .topBox p {
-    font-size: 4vw;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 4vh;
 }
 
 /* ------------------------------------------------------------ */
@@ -169,15 +187,14 @@ nav a {
     border: none;
     border-radius: 25px;
     box-shadow: var(--shadow);
-    font-size: 3vw;
+    font-size: 12px;
     font-weight: bold;
     font-family: "Montserrat", 'Segoe UI', Roboto, sans-serif;
 }
 
 .btnType1:hover {
-    transition-duration: 0.2s;
-    color: var(--darkGrey);
-    background-color: var(--white);
+    transition-duration: 0.3s;
+    background-color: var(--lightGrey);
 }
 
 .btnType1 i {
@@ -198,6 +215,36 @@ nav a {
 
 .textSection {
     padding: 10vh 10vw;
+}
+
+#first{
+    background-image: url("img/Blueblop.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#first p {
+    color: var(--darkGrey);
+}
+
+#about{
+    padding: 20vh 10vw 4vh;
+    background-image: url("img/Blueblop.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about h2, #about p {
+    color: var(--darkGrey);
+}
+
+#about p {
+    font-size: 16px;
+}
+
+#mission {
     background-image: url("img/.gif/Waterfall.gif");
     background-position: bottom;
     background-repeat: no-repeat;
@@ -206,7 +253,7 @@ nav a {
 }
 
 .textSection h2 {
-    font-size: 4vw;
+    font-size: 18px;
 }
 
 .textSection p {
@@ -223,12 +270,12 @@ nav a {
 }
 
 .textSection2 h2 {
-    font-size: 6vw;
+    font-size: 24px;
     color: var(--darkGrey);
 }
 
 .textSection2 p {
-    font-size: 4vw;
+    font-size: 16px;
     color: var(--darkGrey);
 }
 
@@ -249,7 +296,7 @@ nav a {
     color: var(--white);
     background-color: var(--darkGrey);
     text-align: left;
-    font-size: 4vw;
+    font-size: 16px;
     transition: background-color 0.2s;
 }
 
@@ -292,11 +339,11 @@ nav a {
 }
 
 .instagramSection h3 {
-    font-size: 8vw;
+    font-size: 34px;
 }
 
 .instagramSection p {
-    font-size: 3vw;
+    font-size: 12px;
 }
 
 .instagramSection a {
@@ -318,7 +365,7 @@ nav a {
 }
 
 .infoSection h2 {
-    font-size: 4vw;
+    font-size: 18px;
     margin-bottom: 6vh;
 }
 
@@ -329,12 +376,12 @@ nav a {
 }
 
 .benefitBox h4 {
-    font-size: 5vw;
+    font-size: 24px;
     margin-bottom: 0;
 }
 
 .benefitBox p {
-    font-size: 4vw;
+    font-size: 16px;
 }
 
 /* ------------------------------------------------------------ */
@@ -347,7 +394,7 @@ nav a {
 }
 
 .infoSection2 h2 {
-    font-size: 4vw;
+    font-size: 18px;
     margin-bottom: 6vh;
 }
 
@@ -358,15 +405,20 @@ nav a {
 }
 
 .infoBox h4 {
-    font-size: 5vw;
+    font-size: 24px;
 }
 
 .infoBox p {
-    font-size: 4vw;
+    font-size: 16px;
+}
+
+.teamDescription {
+    text-align: left;
 }
 
 .infoBox img {
     border-radius: 50%;
+    width: 50%;
 }
 
 /* ------------------------------------------------------------ */
@@ -383,7 +435,7 @@ nav a {
 }
 
 .downloadSection h3 {
-    font-size: 8vw;
+    font-size: 30px;
 }
 
 /* ------------------------------------------------------------ */
@@ -412,7 +464,7 @@ footer a:hover {
 
 footer p {
     color: var(--darkGrey);
-    font-size: 3vw;
+    font-size: 12px;
     margin: 0
 }
 
@@ -508,40 +560,54 @@ footer p {
 @media only screen and (min-width: 768px) {
 
     p {
-        font-size: 2vw;
+        font-size: 26px;
     }
 
     /* ------------------------------------------------------------ */
     /* Top Box */
 
     .topBox {
-        padding: 35vh 30vw;
+        padding: 35vh 35vw;
+        background-position: 50% 70%;
     }
 
     .topBox h1 {
-        font-size: 4vw;
+        font-size: 60px;
     }
 
     .topBox p {
-        font-size: 2vw;
+        font-size: 20px;
     }
 
     /* ------------------------------------------------------------ */
     /* Button */
 
+    .buttonDisplay {
+        grid-gap: 2vw;
+    }
+
     .btnType1 {
-        font-size: 1vw;
+        font-size: 16px;
     }
 
     /* ------------------------------------------------------------ */
     /* Text Section */
 
     .textSection {
-        padding: 10vh 30vw;
+        padding: 30vh 30vw;
     }
 
     .textSection h2 {
-        font-size: 1vw;
+        font-size: 2opx;
+    }
+
+    #first {
+        background-image: url("img/BlueblopDesk.png");
+    }
+
+    #about{
+        padding: 20vh 30vw 10vh;
+        background-image: url("img/BlueblopDesk.png");
     }
 
     /* ------------------------------------------------------------ */
@@ -574,11 +640,11 @@ footer p {
     }
 
     .instagramSection h3 {
-        font-size: 4vw;
+        font-size: 60px;
     }
 
     .instagramSection p {
-        font-size: 2vw;
+        font-size: 20px;
     }
 
     .imgDisplay {
@@ -595,7 +661,7 @@ footer p {
     }
 
     .infoSection h2 {
-        font-size: 1vw;
+        font-size: 20px;
     }
 
     .benefits {
@@ -604,11 +670,11 @@ footer p {
     }
 
     .benefitBox h4 {
-        font-size: 2vw;
+        font-size: 26px;
     }
 
     .benefitBox p {
-        font-size: 1vw;
+        font-size: 18px;
     }
 
     /* ------------------------------------------------------------ */
@@ -646,10 +712,11 @@ footer p {
 
     .downloadSection {
         padding: 30vh 30vw;
+        background-position: 50% 70%;
     }
 
     .downloadSection h3 {
-        font-size: 3vw;
+        font-size: 60px;
     }
 
     /* ------------------------------------------------------------ */
@@ -665,7 +732,7 @@ footer p {
     }
 
     footer p {
-        font-size: 1vw;
+        font-size: 16px;
     }
 
     .footerMedia {
@@ -681,6 +748,7 @@ footer p {
     .copyright {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0;
     }
 
     /* ------------------------------------------------------------ */

@@ -34,18 +34,50 @@
         </div>
     </header>
 
-<!-- Text Section 2 -->
+<!-- Info Section 2 -->
 
-    <section class="textSection2">
-        <h2><i class="fas fa-check-square"></i> Terms & Conditions</h2>
-        <div>
-            <button type="button" class="collapsibleButton">Expand content</button>
-            <div class="collapsibleContent">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, mollitia.</p>
+    <section class="infoSection2">
+        <h2>Our Team</h2>
+        <div class="infoBoxes">
+            <div class="infoBox">
+                <h4>Trine</h4>
+                <p>CEO, Founder and Product Developer</p>
+                <img src="img/AppLogo – Blue(uncut).png" alt="Test">
+                <p class="teamDescription">Trine loves self-development, people, and the team. Her biggest
+                wish is that My True Value can make a difference in the world!</p>
+            </div>
+            <div class="infoBox">
+                <h4>Christian</h4>
+                <p>Owner and Co-Driver</p>
+                <br>
+                <img src="img/AppLogo – Blue(uncut).png" alt="Test">
+                <p class="teamDescription">Christian has a hard time sitting still, so he always wanders around
+                but takes the biggest and heaviest decisions</p>
+            </div>
+            <div class="infoBox">
+                <h4>Mariana</h4>
+                <p>Graphic Designer and SoMe Expert</p>
+                <img src="img/AppLogo – Blue(uncut).png" alt="Test">
+                <p class="teamDescription">Mariana loves working with herself and her biggest wish is to make SoMe
+                a great place to be</p>
+            </div>
+            <div class="infoBox">
+                <h4>Daniell</h4>
+                <p>UX & UI Designer and Product Developer</p>
+                <img src="img/AppLogo – Blue(uncut).png" alt="Test">
+                <p class="teamDescription">Daniell works extremely efficiently. He is creative and loves to challenge
+                himself with creating the best designs possible.</p>
+            </div>
+            <div class="infoBox">
+                <h4>Sebastian</h4>
+                <p>App and Web Developer</p>
+                <br>
+                <img src="img/AppLogo – Blue(uncut).png" alt="Test">
+                <p class="teamDescription">Sebastian is a quiet genius. You get relaxed around Sebastian, and we
+                believe there is nothing Sebastian cannot do!</p>
             </div>
         </div>
     </section>
-    <div class="divider"></div>
 
 <!-- Footer -->
 
@@ -55,6 +87,7 @@
             <div class="divider2"></div>
             <a href="about.html">About Us</a>
             <a href="product.html">Product</a>
+            <a href="team.html">The Team</a>
             <a href="#">Partnership</a>
         </section>
         <section class="footerSection">
@@ -82,21 +115,6 @@
         </section>
     </footer>
 
-    <script>
-        document.querySelectorAll('.collapsibleButton').forEach(button => {
-    button.addEventListener('click', () => {
-        const collapsibleContent = button.nextElementSibling;
-
-        button.classList.toggle('collapsibleButtonActive');
-
-        if (button.classList.contains('collapsibleButtonActive')) {
-            collapsibleContent.style.maxHeight = collapsibleContent.scrollHeight + 'px';
-        }
-        else {
-            collapsibleContent.style.maxHeight = 0;
-        }
-    });
-});
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
