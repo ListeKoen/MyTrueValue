@@ -31,9 +31,9 @@ cookieBtn.addEventListener("click", () => {
     localStorage.setItem("cookieBannerDisplayed", "true");
 });
 
-setTimeout( () => {
+setTimeout(() => {
     if (!localStorage.getItem("cookieBannerDisplayed"))
-    cookieContainer.classList.add("active")
+        cookieContainer.classList.add("active")
 }, 2000);
 
 /* Collapsible */
