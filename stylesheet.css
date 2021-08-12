@@ -169,7 +169,7 @@ nav a {
 .buttonDisplay {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 4vw;
+    grid-gap: 0;
 }
 
 .btnType1 {
@@ -212,10 +212,8 @@ nav a {
 }
 
 #first{
-    background-image: url("img/Blueblop.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 }
 
 #first p {
@@ -265,6 +263,10 @@ nav a {
 
 .textSection2 h2 {
     font-size: 24px;
+    color: var(--darkGrey);
+}
+
+.textSection2 h4 {
     color: var(--darkGrey);
 }
 
@@ -589,7 +591,7 @@ footer p {
     /* Button */
 
     .buttonDisplay {
-        grid-gap: 2vw;
+        grid-gap: 1vw;
     }
 
     .btnType1 {
@@ -608,7 +610,8 @@ footer p {
     }
 
     #first {
-        background-image: url("img/BlueblopDesk.png");
+        grid-template-columns: repeat(2, 1fr);
+        padding: 15vh 25vw;
     }
 
     #about{
@@ -738,6 +741,10 @@ footer p {
 
     .downloadSection h3 {
         font-size: 60px;
+    }
+
+    .downloadSection .buttonDisplay {
+        padding: 0 6vw;
     }
 
     /* ------------------------------------------------------------ */
