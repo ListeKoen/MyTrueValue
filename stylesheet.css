@@ -45,6 +45,13 @@ img {
     margin: 2vh 0;
 }
 
+.dividerWhite {
+    display: block;
+    height: 1px;
+    background-color: var(--white);
+    margin: 2vh 0;
+}
+
 /* ------------------------------------------------------------ */
 /* Header */
 /* Left side, with logo */
@@ -337,6 +344,10 @@ nav a {
     color: var(--white);
 }
 
+.instagramSection i:hover {
+    color: var(--white);
+}
+
 .imgDisplay {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -406,46 +417,6 @@ nav a {
 .infoBox img {
     border-radius: 50%;
     width: 50%;
-}
-
-/* ------------------------------------------------------------ */
-/* Subscribe to email */
-
-.newsletter-section {
-    padding: 10vh 10vw;
-    color: var(--white);
-    background-color: var(--darkPink);
-}
-
-#mc_embed_signup h2 {
-    text-align: center;
-    font-size: 34px;
-}
-
-.newsletter-terms {
-    font-size: 12px;
-    text-align: left;
-}
-
-.newsletter-terms a {
-    text-decoration: underline;
-    color: var(--white);
-}
-
-#mc_embed_signup {
-    background: var(--darkPink);
-    clear: left;
-    font: 14px;
-}
-
-#mc_embed_signup input {
-    border-radius: 5px;
-    border: none;
-    margin: 1vh 0;
-}
-
-#mc-embedded-subscribe {
-    font-family: "Montserrat", 'Segoe UI', Roboto, sans-serif;
 }
 
 /* ------------------------------------------------------------ */
@@ -590,6 +561,14 @@ footer p {
         font-size: 26px;
     }
 
+    .dividerWhite {
+        display: none;
+    }
+
+    .break {
+        display: none;
+    }
+
     /* ------------------------------------------------------------ */
     /* Top Box */
 
@@ -722,23 +701,31 @@ footer p {
         grid-gap: 6vw;
     }
 
+    #teamInfo {
+        padding: 10vh 15vw 20vh;
+    }
+
+    .infoBox {
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: var(--shadow);
+        border-radius: 10px;
+        padding: 0 2vw;
+        min-width: 200px;
+        min-height: 550px;
+    }
+
     .infoBox h4 {
         font-size: 2vw;
+        color: var(--darkGrey);
     }
 
     .infoBox p {
         font-size: 1vw;
+        color: var(--darkGrey);
     }
 
     .infoBox img {
         border-radius: 50%;
-    }
-
-    /* ------------------------------------------------------------ */
-    /* Subscribe to email */
-
-    .newsletter-section {
-        padding: 20vh 35vw;
     }
 
     /* ------------------------------------------------------------ */
