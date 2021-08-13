@@ -144,9 +144,9 @@ nav a {
     margin-left: 15px;
 }
 
-.nav-link-active {
-    /* color: var(--blue); */
-}
+/* .nav-link-active {
+    color: var(--blue);
+} */
 
 .hamburger {
     display: block;
@@ -657,6 +657,11 @@ footer p {
         padding: 20vh 22vw;
     }
 
+    #first img {
+        margin-left: 5vw;
+        width: 80%;
+    }
+
     #about{
         padding: 20vh 20vw 10vh;
     }
@@ -743,10 +748,6 @@ footer p {
 
     .benefitBox p {
         font-size: 18px;
-    }
-
-    .benefitBox img {
-        width: 60%;
     }
 
     /* ------------------------------------------------------------ */
