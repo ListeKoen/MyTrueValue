@@ -29,6 +29,7 @@ p {
 
 img {
     width: 100%;
+    border-radius: 2px;
 }
 
 .divider {
@@ -222,10 +223,10 @@ nav a {
 
 #about{
     padding: 20vh 10vw 4vh;
-    background-image: url("img/Blueblop.png");
+    /* background-image: url("img/Blueblop.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
 
 #about h2, #about p {
@@ -234,6 +235,19 @@ nav a {
 
 #about p {
     font-size: 16px;
+}
+
+.splitter {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.desktopShow {
+    display: none;
+}
+
+.desktopHide {
+    display: block;
 }
 
 #mission {
@@ -256,7 +270,7 @@ nav a {
 /* Text Section 2 */
 
 .textSection2 {
-    padding: 10vh 10vw;
+    padding: 15vh 10vw;
     background-color: var(--white);
     text-align: left;
 }
@@ -264,6 +278,10 @@ nav a {
 .textSection2 h2 {
     font-size: 24px;
     color: var(--darkGrey);
+}
+
+.productSection h2 {
+    font-size: 18px
 }
 
 .textSection2 h4 {
@@ -606,28 +624,45 @@ footer p {
     }
 
     .textSection h2 {
-        font-size: 2opx;
+        font-size: 20px;
     }
 
     #first {
         grid-template-columns: repeat(2, 1fr);
-        padding: 15vh 25vw;
+        grid-gap: 2vw;
+        padding: 20vh 22vw;
     }
 
     #about{
-        padding: 20vh 30vw 10vh;
-        background-image: url("img/BlueblopDesk.png");
+        padding: 20vh 20vw 10vh;
+    }
+
+    .splitter {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2vw;
+    }
+
+    .desktopShow {
+        display: block;
+    }
+
+    .desktopHide {
+        display: none;
     }
 
     /* ------------------------------------------------------------ */
     /* Text Section 2 */
 
     .textSection2 {
-        padding: 10vh 30vw;
+        padding: 20vh 25vw;
     }
 
     .textSection2 h2 {
-        font-size: 2vw;
+        font-size: 36px;
+    }
+
+    .productSection h2 {
+        font-size: 20px;
     }
 
     .textSection2 p {
@@ -686,6 +721,10 @@ footer p {
         font-size: 18px;
     }
 
+    .benefitBox img {
+        width: 60%;
+    }
+
     /* ------------------------------------------------------------ */
     /* Info Section 2 */
 
@@ -705,7 +744,7 @@ footer p {
     }
 
     #teamInfo {
-        padding: 10vh 15vw 20vh;
+        padding: 15vh 15vw 20vh;
     }
 
     .infoBox {
@@ -714,7 +753,7 @@ footer p {
         border-radius: 10px;
         padding: 0 2vw;
         min-width: 200px;
-        min-height: 550px;
+        min-height: 450px;
     }
 
     .infoBox h4 {
