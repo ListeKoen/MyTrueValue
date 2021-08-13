@@ -4,6 +4,7 @@
 --white: #ffffff;
 --green: #90ED9B;
 --darkGrey: #707070;
+--Grey: #cacaca;
 --lightGrey: #f1f1f1;
 --sand: #dfc9a9;
 --lightPink: #FFCECB;
@@ -87,7 +88,7 @@ nav a {
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
     padding: 1rem 1.5rem 1rem 1.5rem;
     float: right;
 }
@@ -103,25 +104,48 @@ nav a {
     background-color: white;
 }
 
+.nav-divider {
+    width: 95%;
+    margin-left: 1rem;
+}
+
 .nav-menu {
     position: fixed;
-    right: -50%;
+    right: -100%;
     top: 5rem;
     flex-direction: column;
     background-color: #fff;
-    width: 40%;
+    width: 98%;
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    padding: 0;
+    border: solid 1px var(--darkGrey);
 }
 
 .nav-menu.active {
-    right: 0;
+    right: -2.5%;
 }
 
 .nav-item {
-    margin: 2.5rem 0;
+    margin: 2.5rem 0 2.5rem 1rem;
+    text-align: left;
+}
+
+.nav-item-active {
+    background-color: var(--Grey);
+    border-radius: 19px;
+    padding: 10px 10px 10px 0;
+}
+
+.nav-link {
+    color: var(--darkGrey);
+    margin-left: 15px;
+}
+
+.nav-link-active {
+    /* color: var(--blue); */
 }
 
 .hamburger {
