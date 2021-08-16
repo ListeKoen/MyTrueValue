@@ -576,6 +576,11 @@ footer p {
     font-size: 16px;
 }
 
+.NotFoundContainer a {
+    text-decoration: none;
+    color: var(--darkGrey);
+}
+
 /* ------------------------------------------------------------ */
 /* Cookie Container */
 
