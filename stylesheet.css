@@ -144,10 +144,6 @@ nav a {
     margin-left: 15px;
 }
 
-/* .nav-link-active {
-    color: var(--blue);
-} */
-
 .hamburger {
     display: block;
     cursor: pointer;
@@ -634,6 +630,13 @@ footer p {
     .break {
         display: none;
     }
+
+    /* ------------------------------------------------------------ */
+    /* Hamburger Menu */
+    .nav-menu {
+        width: 27vw;
+    }
+
 
     /* ------------------------------------------------------------ */
     /* Top Box */
