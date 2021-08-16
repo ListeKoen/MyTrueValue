@@ -195,6 +195,7 @@ nav a {
 
 .btnType1 {
     padding: 15px 20px;
+    margin: 2vh 0;
     min-width: 135px;
     color: var(--darkGrey);
     background-color: var(--white);
@@ -214,7 +215,7 @@ nav a {
 
 .btnType1 i {
     padding: 0;
-    margin-right: 5px;
+    margin-left: 5px;
 }
 
 .fa-apple {
@@ -243,10 +244,6 @@ nav a {
 
 #about{
     padding: 20vh 10vw 4vh;
-    /* background-image: url("img/Blueblop.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
 }
 
 #about h2, #about p {
@@ -367,7 +364,7 @@ nav a {
 /* Instagram Section */
 
 .instagramSection {
-    padding: 6vh 10vw;
+    padding: 15vh 10vw;
     background-color: var(--sand);
     color: var(--white);
 }
@@ -388,10 +385,10 @@ nav a {
     color: var(--white);
 }
 
-.imgDisplay {
+/* .imgDisplay {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-}
+} */
 
 /* ------------------------------------------------------------ */
 /* Info Section */
@@ -556,9 +553,34 @@ footer p {
 }
 
 /* ------------------------------------------------------------ */
+/* 404 Container */
+
+.NotFoundContainer {
+    margin: 5vh 10vw 0;
+    max-height: 100%;
+}
+
+.NotFoundContainer h1, .NotFoundContainer p {
+    color: var(--darkGrey);
+}
+
+.NotFoundContainer h1 {
+    font-size: 24px;
+}
+
+.NotFoundContainer p {
+    font-size: 16px;
+}
+
+.NotFoundContainer a {
+    text-decoration: none;
+    color: var(--darkGrey);
+}
+
+/* ------------------------------------------------------------ */
 /* Cookie Container */
 
-.cookieContainer {
+/* .cookieContainer {
     position: fixed;
     bottom: -100;
     left: 0;
@@ -591,7 +613,7 @@ footer p {
     border-radius: 10%;
     cursor: pointer;
     font-size: 2vw;
-}
+} */
 
 /* ------------------------------------------------------------ */
 
@@ -712,7 +734,7 @@ footer p {
     /* Instagram Section */
 
     .instagramSection {
-        padding: 6vh 30vw;
+        padding: 15vh 30vw;
     }
 
     .instagramSection h3 {
@@ -723,11 +745,11 @@ footer p {
         font-size: 20px;
     }
 
-    .imgDisplay {
+    /* .imgDisplay {
         padding: 0 20vw 10vh;
         background-color: var(--sand);
         grid-gap: 2vw;
-    }
+    } */
 
     /* ------------------------------------------------------------ */
     /* Info Section */
@@ -847,9 +869,25 @@ footer p {
     }
 
     /* ------------------------------------------------------------ */
+    /* 404 Container */
+
+    .NotFoundContainer {
+        margin: 5vh 30vw;
+        max-height: 100%;
+    }
+
+    .NotFoundContainer img {
+        width: 70%;
+    }
+
+    .NotFoundContainer br {
+        display: none;
+    }
+
+    /* ------------------------------------------------------------ */
     /* Cookie Container */
 
-    .cookieContainer {
+    /* .cookieContainer {
         position: fixed;
         bottom: -100;
         left: 0;
@@ -882,7 +920,7 @@ footer p {
         border-radius: 10%;
         cursor: pointer;
         font-size: 2vw;
-    }
+    } */
 }
 
 
