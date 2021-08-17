@@ -23,7 +23,7 @@ function closeMenu() {
 
 /* Cookie Container */
 
-const cookieContainer = document.querySelector(".cookieContainer");
+/* const cookieContainer = document.querySelector(".cookieContainer");
 const cookieBtn = document.querySelector(".cookieBtn");
 
 cookieBtn.addEventListener("click", () => {
@@ -34,7 +34,7 @@ cookieBtn.addEventListener("click", () => {
 setTimeout(() => {
     if (!localStorage.getItem("cookieBannerDisplayed"))
         cookieContainer.classList.add("active")
-}, 2000);
+}, 2000); */
 
 /* Collapsible */
 
