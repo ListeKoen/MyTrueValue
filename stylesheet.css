@@ -617,6 +617,43 @@ footer p {
 } */
 
 /* ------------------------------------------------------------ */
+/* Signups */
+
+.signup-head {
+    padding-bottom: 0;
+}
+
+.signup-text-section {
+    width: 80%;
+    margin: auto;
+}
+
+.signup-text {
+    color: var(--darkGrey);
+    text-align: left;
+    font-size: 16px;
+}
+
+#app-link {
+    margin: auto;
+    width: 95%;
+    font-size: 16px;
+    text-align: left;
+}
+
+.signup-reference {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.shown {
+    display: block;
+}
+
+/* ------------------------------------------------------------ */
 
 @media only screen and (min-width: 768px) {
 
