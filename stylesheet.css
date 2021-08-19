@@ -691,6 +691,8 @@ input.mce_inline_error {
 
 #mce-MMERGE2 {
     min-height: 100px;
+    min-width: 98%;
+    max-width: 98%;
 }
 
 /* ------------------------------------------------------------ */
@@ -1005,6 +1007,12 @@ input.mce_inline_error {
 
     .signup-head {
         padding: 15vh 25vw;
+    }
+
+    #mce-MMERGE2 {
+        min-height: 100px;
+        min-width: 99.5%;
+        max-width: 99.5%;
     }
 }
 
