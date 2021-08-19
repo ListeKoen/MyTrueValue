@@ -661,12 +661,14 @@ footer p {
     border: 1px solid #eeeeee;
 }
 
-.mce_inline_error {
-    background-color: transparent !important;
+#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+    background-color: transparent;
+    color: var(--red);
 }
 
 input.mce_inline_error {
     background-color: white !important;
+    border: 2px solid var(--red) !important;
 }
 
 #mc_embed_signup form {
