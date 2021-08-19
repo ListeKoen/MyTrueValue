@@ -40,8 +40,9 @@
 
     <section class="textSection2 signup-head">
         <div class="signupContainer">
-            <h2><i class="far fa-envelope"></i> Subscribe</h2>
-            <div class="signup-text-section">
+            <h2 id="subscribe-txt"><i class="far fa-envelope"></i> Subscribe</h2>
+            <h2 id="thx-txt" class="hidden">Thank you!</h2>
+            <div class="signup-text-section" id="signup-top">
                 <p class="signup-text"><strong>Thank you so much for using My True Value!</strong></p>
                 <p class="signup-text">My True Value is an app in progress.
                     Chapter 2 and Chapter 3 are in the making as you read this right now.
@@ -80,7 +81,7 @@
                             <div class="response" id="mce-success-response" style="display:none"></div>
                         </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_40237e35b3f939696603c5296_c454c205cb" tabindex="-1" value=""></div>
-                        <div class="clear" onClick="showLink()"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div> 
+                        <div class="clear" onClick="showNHide()"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div> 
                     </div>
                 </form>
             </div>
@@ -137,11 +138,22 @@
     </footer>
 
     <script>
-    function showLink() {
-        var element = document.getElementById("app-link");
-        element.classList.remove("hidden");
-        element.classList.add("shown");
+    function showNHide() {
+        var sub = document.getElementById("subscribe-txt");
+        var thx = document.getElementById("thx-txt");
+        var top = document.getElementById("signup-top");
+        var form = document.getElementById("mc_embed_signup");
+        var link = document.getElementById("app-link");
+
+        sub.classList.add("hidden");
+        thx.classList.remove("hidden");
+        thx.classList.add("shown")
+        top.classList.add("hidden");
+        form.classList.add("hidden");
+        link.classList.remove("hidden");
+        link.classList.add("shown");
     }
+    </script>
     </script>
 
 </body>
