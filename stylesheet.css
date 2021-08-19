@@ -644,7 +644,7 @@ footer p {
 }
 
 .signupContainer {
-    padding: 2vh 5vw 5vh;
+    padding: 5vh 5vw;
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.8);
 }
@@ -657,8 +657,8 @@ footer p {
     display: block;
 }
 
-#mc_embed_signup input {
-    border: none;
+#mc_embed_signup input, #mc_embed_signup textarea {
+    border: 1px solid #eeeeee;
 }
 
 .mce_inline_error {
@@ -677,12 +677,20 @@ input.mce_inline_error {
     background-color: var(--darkGrey);
 }
 
+#mc_embed_signup .clear {
+    width: 15%;
+}
+
 #mc_embed_signup .button:hover {
     background-color: #a1a1a1;
 }
 
 #mc-embedded-subscribe {
     font-family: "Montserrat", 'Segoe UI', Roboto, sans-serif;
+}
+
+#mce-MMERGE2 {
+    min-height: 100px;
 }
 
 /* ------------------------------------------------------------ */
