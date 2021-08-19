@@ -620,12 +620,11 @@ footer p {
 /* Signups */
 
 .signup-head {
-    padding-bottom: 0;
-}
-
-.signup-text-section {
-    width: 80%;
-    margin: auto;
+    padding: 15vh 5vw 10vh;
+    background-image: url("img/Flowerfield.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .signup-text {
@@ -635,8 +634,7 @@ footer p {
 }
 
 #app-link {
-    margin: auto;
-    width: 95%;
+    font-family: "Montserrat", 'Segoe UI', Roboto, sans-serif;
     font-size: 16px;
     text-align: left;
 }
@@ -645,12 +643,42 @@ footer p {
     display: none;
 }
 
+.signupContainer {
+    padding: 2vh 5vw 5vh;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
 .hidden {
     display: none;
 }
 
 .shown {
     display: block;
+}
+
+#mc_embed_signup input {
+    border: none;
+}
+
+#mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error {
+    border: 1px solid var(--red);
+}
+
+#mc_embed_signup form {
+    padding: 0;
+}
+
+#mc_embed_signup .button {
+    background-color: var(--darkGrey);
+}
+
+#mc_embed_signup .button:hover {
+    background-color: #a1a1a1;
+}
+
+#mc-embedded-subscribe {
+    font-family: "Montserrat", 'Segoe UI', Roboto, sans-serif;
 }
 
 /* ------------------------------------------------------------ */
@@ -758,7 +786,7 @@ footer p {
     }
 
     .textSection2 p {
-        font-size: 1vw;
+        font-size: 16px;
     }
 
     /* ------------------------------------------------------------ */
@@ -959,6 +987,13 @@ footer p {
         cursor: pointer;
         font-size: 2vw;
     } */
+
+    /* ------------------------------------------------------------ */
+    /* Signups */
+
+    .signup-head {
+        padding: 15vh 25vw;
+    }
 }
 
 
