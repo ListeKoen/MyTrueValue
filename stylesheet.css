@@ -790,7 +790,7 @@ input.mce_inline_error {
     /* Text Section 2 */
 
     .textSection2 {
-        padding: 20vh 25vw;
+        padding: 12vh 19vw;
     }
 
     .textSection2 h2 {
@@ -861,11 +861,11 @@ input.mce_inline_error {
     /* Info Section 2 */
 
     .infoSection2 {
-        padding: 10vh 24vw 20vh;
+        padding: 10vh 5vw 20vh 5vw;
     }
 
     .infoSection2 h2 {
-        font-size: 1vw;
+        font-size: 2.5vw;
         margin-bottom: 6vh;
     }
 
@@ -873,10 +873,6 @@ input.mce_inline_error {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 6vw;
-    }
-
-    #teamInfo {
-        padding: 15vh 15vw 20vh;
     }
 
     .infoBox {
@@ -894,7 +890,7 @@ input.mce_inline_error {
     }
 
     .infoBox p {
-        font-size: 1vw;
+        font-size: 1.5vw;
         color: var(--darkGrey);
     }
 
