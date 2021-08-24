@@ -371,7 +371,7 @@ nav a {
 }
 
 .instagramSection h3 {
-    font-size: 34px;
+    font-size: 8vw;
 }
 
 .instagramSection p {
@@ -816,11 +816,11 @@ input.mce_inline_error {
     /* Instagram Section */
 
     .instagramSection {
-        padding: 15vh 30vw;
+        padding: 15vh 10vw;
     }
 
     .instagramSection h3 {
-        font-size: 60px;
+        font-size: 4.5vw;
     }
 
     .instagramSection p {
