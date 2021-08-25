@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+User-agent: *
+Disallow: /terms_&_conditions.html
+
+User-agent: *
+Disallow: /faq.html
+
+User-agent: *
+Disallow: /cookie_policy.html
+
+Sitemap: https://www.mytruevalueapp.com/sitemap.xml

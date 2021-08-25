@@ -13,8 +13,14 @@
 --shadow: 2px 4px 4px rgba(0, 0, 0, 0.3)
 }
 
+@font-face {
+    font-family: 'Montserrat-reg';
+    src: url(fonts/Montserrat-Regular.ttf), url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+    font-display: swap;
+}
+
 body {
-    font-family: "Montserrat", 'Segoe UI', Roboto, sans-serif;
+    font-family: "Montserrat-reg", sans-serif;
     margin: 0;
     text-align: center;
 }
@@ -206,7 +212,7 @@ nav a {
     box-shadow: var(--shadow);
     font-size: 12px;
     font-weight: bold;
-    font-family: "Montserrat", 'Segoe UI', Roboto, sans-serif;
+    font-family: "Montserrat-reg", sans-serif;
     cursor: pointer;
 }
 
@@ -635,7 +641,7 @@ footer p {
 }
 
 #app-link {
-    font-family: "Montserrat", 'Segoe UI', Roboto, sans-serif;
+    font-family: "Montserrat-reg", sans-serif;
     font-size: 16px;
     text-align: left;
 }
@@ -689,7 +695,7 @@ input.mce_inline_error {
 }
 
 #mc-embedded-subscribe {
-    font-family: "Montserrat", 'Segoe UI', Roboto, sans-serif;
+    font-family: "Montserrat-reg", sans-serif;
 }
 
 #mce-MMERGE2 {
@@ -699,7 +705,7 @@ input.mce_inline_error {
 }
 
 .signup-rate-btn {
-    font-family: "Montserrat", 'Segoe UI', Roboto, sans-serif;
+    font-family: "Montserrat-reg", sans-serif;
     clear: both;
     background-color: var(--darkGrey);
     border: 0 none;
