@@ -167,7 +167,7 @@ nav a {
 /* Top Box */
 
 .topBox {
-    background-image: url("img/Mountains.png");
+    background-image: url("img/Mountains.webp");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -270,7 +270,7 @@ nav a {
 }
 
 #mission {
-    background-image: url("img/Waterfall.png");
+    background-image: url("img/Waterfall.webp");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -464,7 +464,7 @@ nav a {
 .downloadSection {
     padding: 10vh 10vw 12vh;
     color: var(--white);
-    background-image: url("img/Forest.png");
+    background-image: url("img/Forest.webp");
     background-position: 50% 80%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -622,7 +622,7 @@ footer p {
 
 .signup-head {
     padding: 15vh 5vw 10vh;
-    background-image: url("img/Flowerfield.png");
+    background-image: url("img/Flowerfield.webp");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
