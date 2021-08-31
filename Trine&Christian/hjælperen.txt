@@ -1,4 +1,0 @@
-Hvis i har en side der ikke skal indekseres, så tilføj følgende kode inde i "robots.txt"
-
-User-agent: *
-Disallow: /[filNavn.html]
