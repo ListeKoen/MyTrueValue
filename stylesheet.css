@@ -660,6 +660,15 @@ footer p {
     display: none;
 }
 
+.rating-stars {
+    width: 20%;
+}
+
+.centerBox {
+    margin: auto;
+    text-align: center;
+}
+
 .shown {
     display: block;
 }
@@ -684,10 +693,12 @@ input.mce_inline_error {
 
 #mc_embed_signup .button {
     background-color: var(--darkGrey);
+    float: right;
+    margin: 0;
 }
 
 #mc_embed_signup .clear {
-    width: 15%;
+    width: 96%;
 }
 
 #mc_embed_signup .button:hover {
