@@ -661,12 +661,21 @@ footer p {
 }
 
 .rating-stars {
-    width: 20%;
+    width: 50%;
+    padding-bottom: 9.75%;
 }
 
 .centerBox {
     margin: auto;
     text-align: center;
+}
+
+.centerTop {
+    margin-bottom: 13%;
+}
+
+.centerBottom {
+    margin-top: 9.75%;
 }
 
 .shown {
@@ -736,6 +745,7 @@ input.mce_inline_error {
     vertical-align: top;
     white-space: nowrap;
     width: auto;
+    margin-right: 0;
 }
 
 .signup-rate-btn:hover, #mc_embed_signup .button:hover {
@@ -1056,6 +1066,10 @@ input.mce_inline_error {
         min-height: 100px;
         min-width: 99.5%;
         max-width: 99.5%;
+    }
+
+    .rating-stars {
+        width: 30%;
     }
 }
 
