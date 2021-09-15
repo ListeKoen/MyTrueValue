@@ -1,5 +1,5 @@
 h2, h5, .blog-text {
-    color: black;
+    color: var(--darkGrey);
 }
 
 .blog-topBox {
@@ -12,13 +12,14 @@ h2, h5, .blog-text {
 }
 
 .blog-divider {
-    width: 50%;
-    margin: 10vh auto;
+    margin: 0 30vw;
+    display: block;
+    height: 1px;
+    background-color: var(--darkGrey);
 }
 
 .blog-section {
-    width: 60%;
-    margin: auto;
+    padding: 5vh 10vw;
 }
 
 .blog-image {
@@ -30,4 +31,15 @@ h2, h5, .blog-text {
 .blog-text {
     text-align: left;
     font-size: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .blog-section {
+        padding: 5vh 30vw;
+    }
+
+    .blog-divider {
+        margin: 0 35vw;
+    }
 }
