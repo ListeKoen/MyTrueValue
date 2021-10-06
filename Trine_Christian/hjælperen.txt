@@ -1,0 +1,15 @@
+Hvis i har en side der ikke skal indekseres, så tilføj følgende kode inde i "robots.txt"
+
+User-agent: *
+Disallow: /[filNavn.html]
+
+---------------------------------
+Hvis en ny side er blevet tilføjet som skal indekseres, så skal i gå ind på https://www.xml-sitemaps.com
+Her skal i skrive "https://www.mytruevalueapp.com" i søgefeltet, så bliver alle siderne crawlet og dem som skal indekseres bliver også det
+Så bliver der genereret en ny "sitemap.xml" fil, denne skal erstatte den "sitemap.mxl" som allerede er i mappen
+
+----------------------------------
+Når alle ændringer er lavet, skal i sørge for at alle filerne er gemt, de skal så uploades på one.com
+Kontrolpanel -> file manager (De kan bare blive trukket fra mappen og ind på siden), der bliver nok spurgt om i vil overskrive filerne, sig ja til dette.
+Når der ikke er nogle fil navne der står med kursiv længere, er alle filerne uploaded og ændringerne er live
+(Tjek om i kan se ændringerne og hvis i ikke kan, prøv at trykke ctrl + shift + r)

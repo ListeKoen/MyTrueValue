@@ -1,0 +1,570 @@
+<!-- I tilfælde af at i skal lave en ny side inde på hjemmesiden, kan i refferere til dette dokument for at finde
+kode stykker til til specifikke sektioner -->
+
+<!-- Når et nyt HTML dokument laves skal i starte med at smide følgende kode ind (Hele blokken uden kommentarer kan findes længere nede)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="robots" content="index, follow"> <!-- Denne linje skal tilføjes i tilfælde af at siden skal indekseres af google (så den kommer frem i google søgninger) -->
+    <meta name="robots" content="noindex, nofollow"> <!-- Hvis det er en side der ikke skal indekseres, skal denne linje tilføjes i stedet -->
+    <!-- OBS. VIGTIGT!! Hvis siden ikke skal indekseres skal i også gå ind i dokumentet der hedder "robots.txt" og tilføje en ny blok af kode. Se "hjælperen.txt" for at se et eksempel -->
+
+    <!-- Hvis siden skal indekseres, kan i lave en meta description, det er tekst som google kan bruge under linket i en google søgning
+    OBS. dette giver ikke nødvendigvis bedre SEO, men kan hjælpe dig med at bruge keywords for at hive brugeren ind -->
+    <meta name="description" content="Kort side beskrivelse 1-2 linjer">
+
+
+    <!-- På alle nye sider, skal de to følgende script tags smides ind, dette er google analytics og denne kode må ikke ændres! -->
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-EDKV2VPZE1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-EDKV2VPZE1');
+    </script>
+
+    <!-- Dette <link> tag sørger for at html dokumentet importere css koden, så siden ser smuk ud -->
+    <link rel="stylesheet" href="stylesheet-min.css" media="all">
+
+    <!-- De næste <script> og <link> tags, importere fontawesome, hvilket indeholder de ikoner vi bruger på hele siden -->
+    <script src="https://kit.fontawesome.com/69957dc5d9.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all">
+
+    <!-- Title er en meget kort tekst som bliver vist i browser tabben, så folk kan se hvilken side de har åben -->
+    <title>My True Value - Grow Your Self-Worth & Self-Esteem - Download Now For Free</title>
+
+    <!-- Dette er det lille ikon der bliver vist i browser tabben -->
+    <link rel="icon" href="img/MyTrueValueIcon.webp" type="image/icon type">
+</head>
+<body>
+    <!-- Inde i et <header> tag tilføjes sidens logo og menu (flere detaljer længere nede) -->
+    <header></header>
+
+    <!-- I et <body> tag tiløjes alt indhold der ikke skal bo i toppen/bunden af siden -->
+    <body></body>
+
+    <!-- I <footer> tagget tilføjes footeren selvfølgelig -->
+    <footer></footer>
+</body>
+</html>
+
+
+---
+
+<!-- Head koden uden kommentarer til at kopiere-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="description" content="UDFYLD MIG"> <!-- Husk en description hvis siden indekseres -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-EDKV2VPZE1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-EDKV2VPZE1');
+    </script>
+
+    <link rel="stylesheet" href="stylesheet-min.css" media="all">
+    <script src="https://kit.fontawesome.com/69957dc5d9.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all">
+    <title>UDFYLD MIG</title> <!-- Husk en titel -->
+    <link rel="icon" href="img/MyTrueValueIcon.webp" type="image/icon type">
+</head>
+<header></header>
+<body></body>
+<footer></footer>
+
+-------------------------------------------------------------------------------------Header Start--------------------------------------------------------------------------------------
+<!-- Når <head> tagget er sat op bør i sætte <header> tagget op -->
+
+    <header>
+        <div>
+            <!-- Dette er logo teksten i øverste venstre hjørne, det bør ikke ændres -->
+            <a href="index.html"><img src="img/LogoText.webp" alt="My True Value"></a>
+        </div>
+        <div>
+            <nav class="navbar">
+                <ul class="nav-menu" id="nav-menu">
+                    <!-- Hvert <li> tag svarer til et nyt menu punkt -->
+                    <!-- Når en ny side bliver lavet skal den tilføjes som et nyt <li> tag her i (Hvis det er en side, ligesom signups skal den selvfølgelig ikke tilføjes) -->
+                    <li class="nav-item"><a href="[FILNAVN.HTML]" class="nav-link">[FIL_NAVN]</a></li>
+                    <!-- Dette <li> tag skal placeres blandt de andre -->
+
+                    <!-- Når du er inde på siden som menu punktet svarer til, skal menu punktet have den class der hedder "nav-item-active"
+                         så man i menuen kan se hvilken side man er på -->
+                    <li class="nav-item nav-item-active"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="product.html" class="nav-link">Product</a></li>
+                    <li class="nav-item"><a href="team.html" class="nav-link">The Team</a></li>
+                    <li class="nav-item"><a href="partnership.html" class="nav-link">Partnership</a></li>
+
+                    <!-- "nav-divider" er linjen der skiller menuen i to, over linjen er de sider som bør indekseres, dette er sider med aktualt indhold som vi godt vil have at
+                    folk finder i en google søgning - Under linjen ligger sider som ikke bliver indekseret, altså sider med indhold som vi ikke vil have at folk finder gennem en
+                    google søgning -->
+                    <hr class="nav-divider">
+                    <li class="nav-item"><a href="terms_&_conditions.html" class="nav-link">Terms & Conditions</a></li>
+                    <li class="nav-item"><a href="privacy_policy.html" class="nav-link">Privacy Policy</a></li>
+                    <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+                </ul>
+                <!-- Dette er hamburger menu ikonet -->
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Når den nye side er lavet og smidt ind i menuen med, "nav-item-active" 
+        skal menuen på alle de andre sider også opdateres med det nye menu punkt. Punktet skal ikke have "nav-item-active" classen her -->
+
+        ---
+
+    <!-- <header> kode uden kommentarer til at kopiere 
+        (husk at tilføje "nav-item-active" til det nye menu punkt og husk at opdatere menuerne på alle andre sider der har en) -->
+
+        <header>
+        <div>
+            <a href="index.html"><img src="img/LogoText.webp" alt="My True Value"></a>
+        </div>
+        <div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item nav-item-active">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="product.html" class="nav-link">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="team.html" class="nav-link">The Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="partnership.html" class="nav-link">Partnership</a>
+                    </li>
+                    <hr class="nav-divider">
+                    <li class="nav-item">
+                        <a href="terms_&_conditions.html" class="nav-link">Terms & Conditions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="privacy_policy.html" class="nav-link">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="faq.html" class="nav-link">FAQ</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+---------------------------------------------------------------------------------Header End & Body Start--------------------------------------------------------------------------
+
+<!-- Bodien er der hvor vi placere alt sidens aktuelle indhold -->
+<!-- Denne sektion af dokumentet kommer til at indeholde en masse eksempler, som bare kan smides ind som det ønskes -->
+
+
+<!-- Top Banner Box ("index.html") - Dette er den første sektion man bliver mødt med når man går ind på siden -->
+    <div class="topBox">
+        <h1>My True Value</h1>
+        <p>Grow your self-worth & self-esteem</p>
+        <div class="buttonDisplay">
+            <a href="https://apps.apple.com/dk/app/my-true-value-grow-self-worth/id1497689443?l=da#?platform=iphone" target="blank"><img src="img/appStore.webp" alt="Get it on App Store"></a>
+            <a href='https://play.google.com/store/apps/details?id=com.feelgoodcompany.feelgood&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="blank"><img alt='Get it on Google Play' src='img/googlePlay.webp'/></a>
+        </div>
+    </div>
+
+
+<!-- Text Section ("index.html") - Dette er en sektion med tekst til venstre og et billede til højre -->
+<!-- Hvis en "textSection" har et id der hedder "first" så betyder det, at det bruger et css grid, som vil sige at indholdet står side om side
+i stedet for at være stablet -->
+    <section class="textSection" id="first">
+        <div>
+            <p>Healthy self-worth is the greatest and strongest gift you can give yourself.</p>
+            <p>This app will be your daily, helpful companion. It is your personal guide
+            that will give you concrete reflections and exercises.</p>
+        </div>
+        <div>
+            <img src="img/WelcomeToMyTrueValue.webp" alt="Welcome to My True Value, your personal guide to better self-worth">
+        </div>
+    </section>
+
+<!-- Text Section - Samme sektion som oven over, men med billede til venstre og tekst til højre -->
+    <section class="textSection" id="first">
+        <div>
+            <img src="img/WelcomeToMyTrueValue.webp" alt="Welcome to My True Value, your personal guide to better self-worth">
+        </div>
+        <div>
+            <p>Healthy self-worth is the greatest and strongest gift you can give yourself.</p>
+            <p>This app will be your daily, helpful companion. It is your personal guide
+            that will give you concrete reflections and exercises.</p>
+        </div>
+    </section>
+
+<!-- Text Section - Denne version af den samme sektion har ikke id'et "first" men i stedet "mission", dette betyder at sektionen
+har billedet "waterfall" som sin baggrund, samt en semi-transperant mørk kasse for at skabe kontrast mellem tekst og baggrund -->
+    <section class="textSection" id="mission">
+        <h2>Our mission</h2>
+        <p>We strive to help you believe in your own worth.
+        To help everyone believe in themselves.
+        We digitalize all the best practices you get from therapists, psychologists, coaches,
+        and mentors. It will make you will feel lighter, happier, and motivated. At the end
+        of the day, the world will be better if we have more people feeling better in it.</p>
+            
+        <p>And that is what we aim for - happy people!</p>
+    </section>
+
+<!-- Text Section - Endnu engang den samme sektion, men med et tredje id som hedder "about" dette id gør at der er padding omkring sektionens indhold,
+det er gjort for at centrere indholdet lidt mere -->
+
+<!-- Splitter ("about.html") - Hvis i skal bruge flere afsnit i én sektion (ligesom ses på about siden) skal i bruge denne inde i en "textSection"
+hver "splitter" bør så blive delt op med en"divider" som er en horisontal linje der hjælper med at opdele indholdet. Disse behøver ikke at blive brugt
+i en sektion som har id'et "about" den kan blive brugt uanset om der er et id eller ej og uanset hvad id'et er hvis der er et -->
+
+<!-- I den anden splitter i eksemplet er der et billede til venstre med tekst til højre, men for at sektionen også virker godt på mobil, så har billedet en class
+der hedder "desktopShow", det samme billede er også i bunden af sektionen men med en anden class "dekstopHide" dette er gjort for at billedet ikke
+ligger i toppen af sektionen når man ser siden på mobil -->
+    <section class="textSection" id="about">    
+        <div class="splitter">
+            <div>
+                <h2>Our mission</h2>
+                <p>Our mission is to help you believe in your own worth.
+                We know that almost everyone can benefit from working with their own worth.
+                Our goal is to digitalize all the best practices you will get from therapists, psychologists,
+                coaches, and mentors. We know the world would be a better place if we all believed more in
+                ourselves.</p>
+                <p>Believing yourself is not about being selfish or ego-centered. Actually, it is the exact
+                opposite. If you believe in yourself and do not put so much negative energy on yourself,
+                you will have more free resources to believe and forgive others too.
+                When you free yourself from emotionally beating yourself up over things you have done, you
+                make room for yourself. That increases your possibility to improve and move on.
+                It sounds great, right?  
+                Is it easy?
+                No! 
+                It is a life-long education.
+                But you can help yourself every day, and that will make you feel better.</p>
+                <p>In the end, the world will be better if we have more people feeling better in it.</p>
+            </div>
+            <div>
+                <br><br>
+                <img src="img/Self-developmentSuccess.webp" alt="Gain success with your self-development and become the best version of yourself">
+            </div>
+        </div>    
+
+        <div class="divider"></div> <!-- adskillelses linje -->
+
+        <div class="splitter">
+                <div>
+                    <img src="img/family.jpg" class="desktopShow" alt="Family photo of the creaters of My True Value">
+                </div>
+                <div>
+                    <h2>Who is behind My True Value?</h2>
+                    <p>We are Trine and Christian from Roskilde, Denmark.
+                    Husband and wife. 
+                    Parents to Elias and Elva, who are 10 and 6 years old.
+                    We are 41 and 43 years old.</p>
+                    <p>We love to stay home and feel cozy with our kids.
+                    Besides that, Christian loves freedom, computer games, and staying active with physical training.
+                    Trine loves hard work, (love) movies, and fast walks.
+                    At the end of the day, our most important energy lies within the family.</p>
+                </div>
+                <div>
+                    <img src="img/family.jpg" class="desktopHide" alt="Family photo of the creaters of My True Value">
+                </div>
+            </div>
+        </section>
+
+    <!-- Text Section 2 / Product Section ("product.html") - Denne sektion er meget ens i forhold til sektionen oven over, den bruger "splitters" og "dividers" ligesom den,
+    forskellene mellem dem, er at <h2>erne er lidt større i denne sektion og så er de også venstre justeret -->
+        <section class="textSection2 productSection">
+            <div class="splitter">
+                <div>
+                    <h2>My True Value is your personal app for self-development.</h2>
+                    <p>It teaches you how to value yourself every day!</p>
+                    <p>It makes you feel loved for who you are.</p>
+                    <p>It helps you build healthy self-worth and self-esteem through reflection and concrete
+                        tools. It teaches you self-care together with self-love and increases your feeling of
+                        love and happiness.</p>
+                </div>
+                <div>
+                    <img src="img/IFeelLoved.webp" alt="Positive affirmation - I feel loved">
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="splitter">
+                <div>
+                    <img src="img/IBelieveInMe.webp" class="desktopShow" alt="Positive affirmation - I believe in me">
+                </div>
+                <div>
+                    <h2>How does the app help you</h2>
+                    <p>My True Value is your guide with concrete exercises. It is exercises chosen by psychologists
+                        and therapists to help you understand yourself better and to gain healthy self-worth and
+                        self-esteem.</p>
+                    <p>You will work on self-understanding, self-love, and self-care.</p>
+                    <p>Exercises will contain reflection, concrete self-care practices, and self-love tools.</p>
+                    <p>Self-care is a big part of your journey, and you will get to work on self-care every day.</p>
+                    <p>The purpose is to make you feel good about yourself. No judging, just being and understanding
+                        with curiosity. It will be your private space.</p>
+                </div>
+                <div>
+                    <img src="img/IBelieveInMe.webp" class="desktopHide" alt="Positive affirmation - I believe in me">
+                </div>
+            </div>
+        </section>
+
+
+    <!-- Text Section 2 ("partnership.html" | terms_&_conditions.html | privacy_policy.html | faq.html) - 
+        Dette er bare en simpel sektion som er beregnet til at indeholde længere tekster uden alt for meget visuelt så som billeder -->
+        <section class="textSection2">
+            <h2><i class="fas fa-handshake"></i> Partnership Request</h2>
+            <p>At My True Value, we’re on a mission to improve the happiness of the world. 
+            Are you on the same quest?</p>
+            <p>We team up with other companies who have the same goal as us.
+            We want the best for our users.
+            We know that they are amazing, and we know they are about to discover it themselves.</p>
+            <p>Working on self-worth and self-esteem is a lifelong education, and our users
+            deserve the best along the way. </p>
+            <p>We have cooperated with companies to create brand awareness for new products.
+            In this case, our users have gotten free online samples/free webinars/free testimonials
+            (100% free of charge and with no commitment or share of data).</p>
+            <p>This makes it possible for us to spoil our users, and it gives you brand awareness.</p>
+            <br>
+            <p>If you consider cooperation, please contact us at at <a href="mailto:info@mytruevalueapp.com">info@mytruevalueapp.com</a></p>
+        </section>
+
+
+<!-- Info Section ("index.html") - Dette er den blå sektion på "index.html" som har fem punkter med en lille mængde indhold
+Der kan være flere eller færre punkter an på hvad i har brug for, sådan som css'en er sat op, kan i bare tilføje eller fjerne punkterne
+hvert punkt er en "<div class=benefitBox"></div>  -->
+    <section class="infoSection">
+        <h2>How will the app help you to healthy self-worth and self-esteem</h2>
+        <div class="benefits">
+            <div class="benefitBox">
+                <h4><i class="fas fa-binoculars"></i> Self-discovery</h4>
+                <p>You will reflect to understand your feelings, your behavior,
+                and your habits.</p>
+            </div>
+            <div class="benefitBox">
+                <h4><i class="fas fa-hand-holding-heart"></i> Self-care</h4>
+                <p>You will practice how to take care of yourself, respect yourself and show
+                yourself compassion.</p>
+            </div>
+            <div class="benefitBox">
+                <h4><i class="fas fa-child"></i> Presence</h4>
+                <p>You will practice presence and learn to listen to yourself and understand
+                your feelings.</p>
+            </div>
+            <div class="benefitBox">
+                <h4><i class="fas fa-heart"></i> Self-love</h4>
+                <p>You will learn to communicate with respect for yourself and others and
+                release judgment.</p>
+            </div>
+            <div class="benefitBox">
+                <h4><i class="fas fa-star"></i> Self-development</h4>
+                <p>You will practice and find what is important to you and your life.
+                So you can work towards a happier life.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Info Section ("team.html") - Dette er sektionen der indeholder alle kortene med team medlemmer
+    hver <div> med den class der hedder "infoBox" svarer til et nyt kort, i mellem hver kort er der en <div> med en class der hedder "dividerWhite"
+    som er en linje der opdeler indholdet på den mobile version af siden -->
+    <section class="infoSection2" id="teamInfo">
+        <h2>Our Team</h2>
+        <div class="infoBoxes">
+            <div class="infoBox">
+                <h4>Trine</h4>
+                <p>CEO, Founder and Product Developer</p>
+                <img src="img/team/Trine.png" alt="Trine">
+                <p class="teamDescription">Trine loves self-development, people, and the team. Her biggest
+                wish is that My True Value can make a difference in the world!</p>
+            </div>
+
+            <div class="dividerWhite"></div>
+
+            <div class="infoBox">
+                <h4>Peach</h4>
+                <p>Mascot</p><br>
+                <img src="img/team/Peach.png" alt="Peach">
+                <p class="teamDescription">Peach is our Mascot and she is your guide and helpful companioin
+                through your self-worth journey.</p>
+            </div>
+
+<!-- Instagram Section ("index.html") - Denne sektion er en simpel farvet baggrund med en titel og et link samt et ikon er sidder sammen med linket-->
+    <section class="instagramSection">
+        <h3>#MyTrueValueApp</h3>
+        <p>Follow us <i class="fab fa-instagram"></i> <a href="https://www.instagram.com/mytruevalueapp/" target="blank">@mytruevalueapp</a></p>
+    </section>
+
+<!-- Download Section ("index.html", "product.html" og "faq.html") - Dette er sektionen vi bruger når vi vil minde brugerne om at downloade appen -->
+    <div class="downloadSection">
+        <h3>Begin your journey</h3>
+        <div class="buttonDisplay">
+            <a href="https://apps.apple.com/dk/app/my-true-value-grow-self-worth/id1497689443?l=da#?platform=iphone" target="blank"><img src="img/appStore.webp" alt="Apple App Store"></a>
+            <a href='https://play.google.com/store/apps/details?id=com.feelgoodcompany.feelgood&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="blank"><img alt='Get it on Google Play' src='img/googlePlay.webp'/></a>
+        </div>
+    </div>
+
+<!-- Collapsible button/content("privacy_policy.html" og "faq.html") - Denne sektion indeholder en knap samt noget indhold. Inholdet er til at starte med gemt
+ved hjælp af css, indholdet bliver vist når knappen bliver trykket på, dette gøres ved hjælp af javaScript
+(javaScript koden kan ses i bunden af footer sektionen eller inde på de relevante siders filer) -->
+    <div>
+        <button type="button" class="collapsibleButton">Do I need to do self-worth <br class="break">exercises every day?</button>
+        <div class="collapsibleContent">
+            <p>You get the best result if you do at least 2 exercises every day.</p>
+            <p>But remember this: Everything you do is better than nothing.</p>
+            <p>Don’t get angry with yourself because you lost one day’s practice. It does not matter. You
+            are already much longer than before you started working on your self-worth.
+            Once you have started the app, you are already on the way.</p>
+            <p>We know you are the greatest project you will ever work on. Over time we know bringing
+            yourself self-care and self-love will be a habit you cannot live without.</p>
+        </div>
+    </div>
+
+---------------------------------------------------------------------------------Body End & Footer Start---------------------------------------------------------------------------
+
+    <footer>
+        <!-- Dette er den øverste venstre sektion i footeren, når en ny side er lavet skal den nye side også tilføjes her, samt i footeren på alle andre sider -->
+        <!-- Denne sektion svare til de menu punkter der ligger over linjen i hamburger menuen, så det er alle de inkeserede sider -->
+        <section class="footerSection">
+            <h4>My True Value</h4>
+            <div class="divider2"></div>
+            <a href="about.html">About Us</a>
+            <a href="product.html">Product</a>
+            <a href="team.html">The Team</a>
+            <a href="partnership.html">Partnership</a>
+        </section>
+
+        <!-- Dette er den højre sektion i footeren -->
+        <!-- Denne sketion svare til menu punkterne som bliver fundet under linjen i hamburger menuen, altså de sider som ikke bliver indekseret -->
+        <section class="footerSection">
+            <h4>More</h4>
+            <div class="divider2"></div>
+            <a href="terms_&_conditions.html">Terms & Conditions</a>
+            <a href="privacy_policy.html">Privacy Policy</a>
+            <a href="faq.html">FAQ</a>
+        </section>
+
+        <!-- Denne sektion indeholder alle socialle medie links -->
+        <section class="footerMedia">
+            <a href="https://www.facebook.com/mytruevalueapp" target="blank" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/company/my-true-valueapp" target="blank" class="fa fa-linkedin"></a>
+            <a href="https://www.youtube.com/channel/UCf_ePr-oLUkbloDmkiaP1BQ" target="blank" class="fa fa-youtube"></a>
+            <a href="https://www.instagram.com/mytruevalueapp/" target="blank" class="fa fa-instagram"></a>
+            <a href="https://www.pinterest.com/mytruevalueapp/_created/" target="blank" class="fa fa-pinterest"></a>
+            <a href="https://www.tiktok.com/@mytruevalueapp?lang=en" target="blank" class="fa fa-tiktok"></a>
+        </section>
+
+        <!-- Dette er bare en tom sektion, for at indholdet står som det skal -->
+        <section>
+            <!-- Empty -->
+        </section>
+        <section class="copyright">
+            <p>©2021 My True Value.</p>
+            <p>All rights reserved</p>
+        </section>
+    </footer>
+
+    <!-- Dette linker filen med vores javaScript fil, det er vigtigt at dette ligger efter </footer> tagget men stadig inde i <body> tagget
+    javaScript filen sørger for at hamburger menuen kan åbne og lukke -->
+    <script src="main-min.js"></script>
+
+    <!-- Dette skal kun inkluderes i filen hvis siden har knapper med den class der hedder "collapsibleButton" og indhold med en class der hedder "collapsibleContent" -->
+    <script>
+        document.querySelectorAll('.collapsibleButton').forEach(button => {
+            button.addEventListener('click', () => {
+                const collapsibleContent = button.nextElementSibling;
+
+                button.classList.toggle('collapsibleButtonActive');
+
+                if (button.classList.contains('collapsibleButtonActive')) {
+                    collapsibleContent.style.maxHeight = collapsibleContent.scrollHeight + 'px';
+                }
+                else {
+                    collapsibleContent.style.maxHeight = 0;
+                }
+            });
+        });
+    </script>
+
+    ---
+
+    <!-- Footer koden uden kommentarer, til at kopiere -->
+
+        <footer>
+        <section class="footerSection">
+            <h4>My True Value</h4>
+            <div class="divider2"></div>
+            <a href="about.html">About Us</a>
+            <a href="product.html">Product</a>
+            <a href="team.html">The Team</a>
+            <a href="partnership.html">Partnership</a>
+        </section>
+        <section class="footerSection">
+            <h4>More</h4>
+            <div class="divider2"></div>
+            <a href="terms_&_conditions.html">Terms & Conditions</a>
+            <a href="privacy_policy.html">Privacy Policy</a>
+            <a href="faq.html">FAQ</a>
+        </section>
+        <section class="footerMedia">
+            <a href="https://www.facebook.com/mytruevalueapp" target="blank" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/company/my-true-valueapp" target="blank" class="fa fa-linkedin"></a>
+            <a href="https://www.youtube.com/channel/UCf_ePr-oLUkbloDmkiaP1BQ" target="blank" class="fa fa-youtube"></a>
+            <a href="https://www.instagram.com/mytruevalueapp/" target="blank" class="fa fa-instagram"></a>
+            <a href="https://www.pinterest.com/mytruevalueapp/_created/" target="blank" class="fa fa-pinterest"></a>
+            <a href="https://www.tiktok.com/@mytruevalueapp?lang=en" target="blank" class="fa fa-tiktok"></a>
+        </section>
+        <section>
+            <!-- Empty -->
+        </section>
+        <section class="copyright">
+            <p>©2021 My True Value.</p>
+            <p>All rights reserved</p>
+        </section>
+    </footer>
+
+    <script src="main-min.js"></script>
+
+    <script>
+        document.querySelectorAll('.collapsibleButton').forEach(button => {
+            button.addEventListener('click', () => {
+                const collapsibleContent = button.nextElementSibling;
+
+                button.classList.toggle('collapsibleButtonActive');
+
+                if (button.classList.contains('collapsibleButtonActive')) {
+                    collapsibleContent.style.maxHeight = collapsibleContent.scrollHeight + 'px';
+                }
+                else {
+                    collapsibleContent.style.maxHeight = 0;
+                }
+            });
+        });
+    </script>
+
+
+----------------------------------------------------------------------------------------Footer End-----------------------------------------------------------------------------------
+
